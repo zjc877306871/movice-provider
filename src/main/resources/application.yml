@@ -16,3 +16,16 @@ spring:
     url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
     username: zhangjc
     password: zhangjc
+    initialize: true
+#»’÷æ≈‰÷√
+logging:
+  level:
+    root: info
+#    ¥Ú”°SQL”Ôæ‰
+    org.hibernate: info
+    org.hibernate.type.description.sql.BasicBinder: trace
+    org.hibernate.type.description.sql.BaseExtractor: trace
+    com.zhang: debug
+
+
+
