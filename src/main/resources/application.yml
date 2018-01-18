@@ -1,6 +1,16 @@
 server:
   port: 8090
 spring:
+  jpa:
+#  是否自动创建ddl语句
+    generate-ddl: true
+    #  是否打印sql语句
+    show-sql: true
+    #  hibernate是否自动创建ddl语句
+    hibernate:
+      ddl-auto: create
+
+
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
