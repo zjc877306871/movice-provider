@@ -2,11 +2,11 @@ server:
   port: 8090
 spring:
   jpa:
-#  是否自动创建ddl语句
+#  鎵撳嵃ddl璇彞
     generate-ddl: true
-    #  是否打印sql语句
+    #
     show-sql: true
-    #  hibernate是否自动创建ddl语句
+    #  hibernate鎵撳嵃ddl璇彞
     hibernate:
       ddl-auto: create
 
@@ -17,11 +17,11 @@ spring:
     username: zhangjc
     password: zhangjc
     initialize: true
-#日志配置
+# 鏃ュ織绾у埆閰嶇疆
 logging:
   level:
     root: info
-#    打印SQL语句
+#    鏄剧ずsql璇彞
     org.hibernate: info
     org.hibernate.type.description.sql.BasicBinder: trace
     org.hibernate.type.description.sql.BaseExtractor: trace
