@@ -1,5 +1,6 @@
 package com.zhang.springcould.controller;
 
+import com.zhang.springcould.entity.Teacher;
 import com.zhang.springcould.service.MoviceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,8 +22,8 @@ public class MoviceController {
      * @return
      */
     @RequestMapping("/movice/{id}")
-    public String queryUserInfo(@PathVariable String id){
-        String name = moviceService.queryMovice(id);
+    public Teacher queryUserInfo(@PathVariable String id){
+        Teacher name = moviceService.queryMovice(id);
         return name;
     }
 }

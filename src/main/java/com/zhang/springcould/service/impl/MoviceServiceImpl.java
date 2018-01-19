@@ -1,5 +1,6 @@
 package com.zhang.springcould.service.impl;
 
+import com.zhang.springcould.entity.Teacher;
 import com.zhang.springcould.mapper.UserInfoMapper;
 import com.zhang.springcould.service.MoviceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,8 @@ public class MoviceServiceImpl implements MoviceService {
     private UserInfoMapper userInfoMapper;
 
     @Override
-    public String queryMovice(String id) {
-        String name = userInfoMapper.selectUserInfo(id);
+    public Teacher queryMovice(String id) {
+        Teacher name = userInfoMapper.selectUserInfo(id);
         return name;
     }
 }

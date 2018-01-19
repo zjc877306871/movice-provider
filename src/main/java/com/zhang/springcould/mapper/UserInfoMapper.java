@@ -1,5 +1,6 @@
 package com.zhang.springcould.mapper;
 
+import com.zhang.springcould.entity.Teacher;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
@@ -11,5 +12,5 @@ import org.springframework.stereotype.Component;
 public interface UserInfoMapper {
 
     @Select(value = "select tname from teacher where tId = #{tId}")
-    public String selectUserInfo(@Param("tId") String id);
+    public Teacher selectUserInfo(@Param("tId") String id);
 }
